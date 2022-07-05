@@ -5,8 +5,8 @@
 
 // Note: You have to complete isEligible function. No need to take any input
 
-const isEligible = (a) => {
-    if(a >= 18){
+const isEligible = (A) => {
+    if(A >= 18){
       return ("Eligible for Voting" );
       }
       else{

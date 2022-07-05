@@ -10,20 +10,20 @@
 
 const findGrades = (M) => {
   switch(true){
+    case ((M >= 41) && (M <= 50)):
+      return 'A';
+      
+    case ((M >= 31) && (M <= 40)):
+      return 'B';
+      
+    case ((M >= 21) && (M <= 30)):
+      return 'C';
+      
+    case ((M >= 11) && (M <= 20)):
+      return 'D';
+      
     case (M <= 10) :
-      return ' E ';
-      
-    case M >= 11 && M <= 20:
-      return ' D ';
-      
-    case M >= 21 && M <= 30:
-      return ' C ';
-      
-    case M >= 31 && M <= 40:
-      return ' B ';
-      
-    case M >= 41 && M <= 50:
-      return ' A ';
+      return 'E';
       
     default :
       return ' No result found ! ';
@@ -51,26 +51,3 @@ console.log(findGrades(1));
 // };
 // console.log(findGrades(1));
 
-// const findGrades = (M) => {
-//     switch(M){
-//       case (M <= 10) :
-//         return ('E');
-        
-//       case (M >= 11 && M <= 20):
-//         return ('D');
-        
-//       case (M >= 21 && M <= 30):
-//         return ('C');
-        
-//       case (M >= 31 && M <= 40):
-//         return ('B');
-        
-//       case (M >= 41 && M <= 50):
-//         return ('A');
-        
-//       default :
-//         return (' No result found !');
-        
-//     }
-// };
-// console.log(findGrades(1));
